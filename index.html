@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Draft</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<!-- scrollsnap later for the -->
+
+<body>
+    <!---GLOW SA BGD-->
+    <div class="bgd-shapes">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+
+    <!-- HEADERRR-------------------->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="#HOME">NOT A TRAP</a>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#HOME" class="active">Home</a></li>
+                    <li><a href="#GAME">Game</a></li>
+                    <li><a href="#GALLERY">Gallery</a></li>
+                    <li><a href="#TEAM">Developers</a></li>
+                </ul>
+                <div class="nav-pill"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-section" id="HOME">
+            <div class="images">
+                <img src="image_s/main_tile.png" alt="char" class="main-tile">
+                <img src="image_s/main_saw.png" alt="char" class="main-saw">
+                <img src="image_s/main_char.png" alt="char" class="main-char">
+            </div>
+
+            <div class="hero-text">
+                <p class="game-title-r">NOT A TRAP</p>
+                <div class="title-shadow"></div>
+                <p class="game-title-l">NOT A TRAP</p>
+                <p class="tagline">LEVEL DEVIL-INSPIRED GAME BY UNEPT</p>
+
+                <div class="play-button">
+                    <p><a href="#GAME">PLAY NOW</a></p>
+                </div>
+            </div>
+
+            <div class="lines">
+                <div class="line_1"></div>
+                <div class="line_2"></div>
+            </div>
+
+            <div class="floating_objects">
+                <div class="glow-1"></div>
+                <div class="glow-2"></div>
+                <div class="glow-3"></div>
+                <div class="glow-4"></div>
+                <img src="image_s/main_tile.png" alt="tile" class="float-1">
+                <img src="image_s/main_tile.png" alt="tile" class="float-2">
+                <img src="image_s/main_tile.png" alt="tile" class="float-3">
+                <img src="image_s/main_saw.png" alt="tile" class="float-4">
+            </div>
+        </div>
+
+        <!-- ABOUT THE GAME------------------------------------------- -->
+        <section class="game" id="GAME">
+            <div class="outer-container">
+                <div class="tab active" id="tab-about">
+                    <div class="tab-text">
+                        <h3 class="tab-title"><b>About the Game</b></h3>
+                        <p class="tab-body"><b style="color: #000033;">“Not A Trap”</b> is a platformer game
+                            designed to trick players with unexpected obstacles,
+                            including falling floors, spikes, and other traps
+                            scattered across each level. <br><br>
+                            It is inspired by “Level Devil” by Unept
+                            and requires players to avoid both the visible and non-visible traps
+                            in order to reach the goal and advance to the next level.</p>
+                    </div>
+
+                    <div class="tab-image">
+                        <img src="image_s/player_char.png" alt="" class="tab-img-1">
+                    </div>
+                </div>
+
+                <!-- ------------------------------------------------------------------ -->
+
+                <div class="tab" id="tab-mechanics">
+                    <div class="tab-text">
+                        <h3 class="mechanics-title">Mechanics</h3>
+                        <p class="mechanics-body">MOVEMENTS:<br>
+                            - Left/Right arrow for left and right movement<br>
+                            - Space for jump movement<br>
+                            - Enter/Return for resetting the player<br>
+                            <br><br>
+                            HOW TO PLAY:<br>
+                            1. Select "Play" and choose "Level 1" from the Start Menu.<br>
+                            2. Navigate through obstacles such as pits, spikes, and traps along your path.<br>
+                            3. Enter doors to progress to the next level.<br>
+                            4. Keep your death count within the maximum allowed limit per major level.<br>
+                            5. Complete all sublevels within a major level to unlock the next stage.<br>
+                            6. Use the EXIT, RESET, and PLAY buttons whenever necessary.<br>
+                            7. Enjoy the game and have fun!<br>
+                        </p>
+                    </div>
+
+                    <div class="mechanics-carousel">
+
+                        <button class="carousel-btn left" onclick="moveSlide(-1)">&#10094;</button>
+
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+
+                                <div class="carousel-card">
+                                    <video autoplay loop muted playsinline>
+                                        <source src="image_s/right_walk.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div class="carousel-card">
+                                    <video autoplay loop muted playsinline>
+                                        <source src="image_s/left_walk.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div class="carousel-card">
+                                    <video autoplay loop muted playsinline>
+                                        <source src="image_s/jump.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn right" onclick="moveSlide(1)">&#10095;</button>
+
+                    </div>
+                </div>
+
+                <div class="tab" id="tab-features">
+                    <div class="tab-text">
+                        <h3 class="mechanics-title">Features</h3>
+                        <p class="features-body">
+                            DEATH-LIMIT SYSTEM:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Requires a maximum number of deaths for each major
+                            level.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Exceeding the maximum number of deaths will not allow
+                            you to advance to the
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next level.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The death counter adds up all your deaths from
+                            sublevels 1-3.
+                            <br><br><br>
+                            VISIBLE AND NON-VISIBLE TRAPS<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Includes both obvious obstacles and hidden traps that
+                            activate in not<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the most predictable ways.<br><br><br>
+                            MENTAL ENDURANCE CHALLENGE<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Tests the player's patience, reflexes, and
+                            adaptability in a trial-and-error
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game style.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Challenges the player's focus and
+                            consistency while progressing through
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increasingly difficult obstacles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-container">
+                <nav class="nav-game">
+                    <ul>
+                        <li><a href="#" class="active" data-tab="tab-about">About</a></li>
+                        <li><a href="#" data-tab="tab-mechanics">Mechanics</a></li>
+                        <li><a href="#" data-tab="tab-features">Features</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION --------------------------------------------->
+        <!-- GALLERY SECTION --------------------------------------------->
+        <section class="gallery" id="GALLERY">
+            <h2 class="head-text">GALLERY</h2>
+
+            <div class="gallery-vid-container">
+                <div class="gallery-video">
+                    <video src="image_s/trailer_game_play.mp4" autoplay loop muted playsinline></video>
+                </div>
+
+
+                <div class="vid-text">
+                    <h3>GamePlay</h3>
+                    <p>Featuring obstacles<br>such as:</p>
+                    <ul>
+                        <li>pits/falling floors</li>
+                        <li>spikes</li>
+                        <li>moving spikes</li>
+                        <li>saws</li>
+                        <li>sliding tile</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="infinite-scroll">Level PreviewS</div>
+
+            <!-- ROW 1 -->
+            <div class="scroll-row left">
+                <div class="track">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+                </div>
+            </div>
+
+
+            <!-- ROW 2 -->
+            <div class="scroll-row right">
+                <div class="track">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/sublevel.png">
+                    <img src="image_s/buttons.png">
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section class="team" id="TEAM">
+            <div class="nav-container-team">
+                <nav class="nav-team">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="active" data-tab="tab-leader">Jaysie</a></li>
+                        <li><a href="javascript:void(0)" data-tab="tab-dev1">Acitry</a></li>
+                        <li><a href="javascript:void(0)" data-tab="tab-dev2">Buay</a></li>
+                        <li><a href="javascript:void(0)" data-tab="tab-dev3">Layacan</a></li>
+                        <li><a href="javascript:void(0)" data-tab="tab-dev4">Marata</a></li>
+                    </ul>
+                </nav>
+                <div class="team-label">TEAM</div>
+            </div>
+
+            <div class="team-container">
+
+                <!-- LEADER -->
+                <div class="team-tab active" id="tab-leader">
+                    <div class="dev-card" id="card-leader">
+                        <div class="dev-card-header" onclick="toggleDevCard('card-leader')">
+                            <h3 class="dev-card-header-name">JAYSIE ANN P. DUQUE</h3>
+                            <p class="dev-card-body-name">Developer </p>
+                            <span class="dev-card-toggle">▼</span>
+                        </div>
+                        <div class="dev-card-body-wrap">
+                            <p class="dev-section-title">Overview</p>
+                            <div class="dev-info">
+                                <img src="image_s/jc-profile.jpg" alt="" class="profile-picture">
+                                <div class="profile-bio">
+                                    <p class="bio-name">JAYSIE ANN P. DUQUE</p>
+                                    <p class="bio-detail">Block: ITEN-02</p>
+                                    <p class="bio-detail">BS Information Technology</p>
+                                    <p class="bio-detail">Major in Network Infrastructure with Cybersecurity</p>
+                                </div>
+                                <div class="dev-divider"></div>
+                                <p class="bio-school">Student at Universidad de Dagupan</p>
+                            </div>
+                            <div class="skills">
+                                <p class="skills-heading">Skills</p>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">Python</p>
+                                        <p class="skill-percent" style="color:#02ccff;">30%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="30%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">Pygame</p>
+                                        <p class="skill-percent" style="color:#ff9922;">25%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="25%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">HTML / CSS</p>
+                                        <p class="skill-percent" style="color:#00ccaa;">50%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="50%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">JavaScript</p>
+                                        <p class="skill-percent" style="color:#cc44ff;">15%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="15%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 2: Projects -->
+                    <div class="dev-card-static">
+                        <p class="dev-section-title">Projects</p>
+                        <div class="dev-project-item">
+                            <p class="project-name">Not A Trap</p>
+                            <p class="dev-card-body">A Pygame platformer inspired by Level Devil. Features
+                                trap-based
+                                levels, death limit system, and animated obstacles.</p>
+                        </div>
+                        <div class="dev-project-item">
+                            <p class="project-name">Scrabble Game</p>
+                            <p class="dev-card-body">----</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: Achievements -->
+                    <div class="dev-card-static">
+                        <p class="dev-section-title">Achievements</p>
+                        <div class="dev-achievement-item">
+                            <p class="achievement-name">Dean's Lister</p>
+                            <p class="dev-card-body">1st Semester, S.Y. 2025-2026</p>
+                        </div>
+                        <div class="dev-achievement-item">
+                            <p class="achievement-name">Java Foundations Certification</p>
+                            <p class="dev-card-body">S.Y. 2025-2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEV 1 -->
+                <div class="team-tab" id="tab-dev1">
+                    <div class="dev-card" id="card-leader">
+                        <div class="dev-card-header" onclick="toggleDevCard('card-leader')">
+                            <h3 class="dev-card-header-name">RONALYN C. ACITRY</h3>
+                            <p class="dev-card-body-name">Developer </p>
+                            <span class="dev-card-toggle">▼</span>
+                        </div>
+                        <div class="dev-card-body-wrap">
+                            <p class="dev-section-title">Overview</p>
+                            <div class="dev-info">
+                                <img src="image_s/jc-profile.jpg" alt="" class="profile-picture">
+                                <div class="profile-bio">
+                                    <p class="bio-name">RONALYN C. ACITRY</p>
+                                    <p class="bio-detail">Block: ITEN-02</p>
+                                    <p class="bio-detail">BS Information Technology</p>
+                                    <p class="bio-detail">Major in Network Infrastructure with Cybersecurity</p>
+                                </div>
+                                <div class="dev-divider"></div>
+                                <p class="bio-school">Student at Universidad de Dagupan</p>
+                            </div>
+                            <div class="skills">
+                                <p class="skills-heading">Skills</p>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">Python</p>
+                                        <p class="skill-percent" style="color:#02ccff;">30%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="30%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">Pygame</p>
+                                        <p class="skill-percent" style="color:#ff9922;">25%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="25%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">HTML / CSS</p>
+                                        <p class="skill-percent" style="color:#00ccaa;">50%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="50%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-label-row">
+                                        <p class="skill-label">JavaScript</p>
+                                        <p class="skill-percent" style="color:#cc44ff;">15%</p>
+                                    </div>
+                                    <div class="skill-bar-track">
+                                        <div class="skill-bar-fill" data-width="15%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- CARD 2: Projects -->
+                    <div class="dev-card-static">
+                        <p class="dev-section-title">Projects</p>
+                        <div class="dev-project-item">
+                            <p class="project-name">Indiana Jones inspired game</p>
+                            <p class="dev-card-body">A Pygame platformer inspired by Level Devil. Features
+                                trap-based
+                                levels, death limit system, and animated obstacles.</p>
+                        </div>
+                        <div class="dev-project-item">
+                            <p class="project-name">Scrabble Game</p>
+                            <p class="dev-card-body">----</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: Achievements -->
+                    <div class="dev-card-static">
+                        <p class="dev-section-title">Achievements</p>
+                        <div class="dev-achievement-item">
+                            <p class="achievement-name">Dean's Lister</p>
+                            <p class="dev-card-body">1st Semester, S.Y. 2025-2026</p>
+                        </div>
+                        <div class="dev-achievement-item">
+                            <p class="achievement-name">Java Foundations Certification</p>
+                            <p class="dev-card-body">S.Y. 2025-2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">NOT A TRAP</div>
+            <nav class="footer-nav">
+                <a href="#HOME">Home</a>
+                <a href="#GAME">Game</a>
+                <a href="#GALLERY">Gallery</a>
+                <a href="#TEAM">Team</a>
+            </nav>
+            <p class="footer-copy">© 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
